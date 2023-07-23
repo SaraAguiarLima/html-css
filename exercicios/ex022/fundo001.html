@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de imagens de Fundos 001</title>
+    <style>
+
+        body{
+            background-image: url(imagens/wallpaper002.jpg);
+        }
+        div.quadrado{
+            display: inline-block;
+            border: 2px solid black;
+            border-radius: 10px;
+            background-color: lightgrey;
+            width: 300px;
+            height: 300px;
+        }
+        div#q1{
+            background-color:skyblue ;/*1°opção cor solida*/
+        }
+        div#q2{
+            background-image:linear-gradient(to bottom, yellow,red) ;/*2°opção cor degradê*/
+        }
+        div#q3{
+            background-image: url("imagens/pattern003.png")/*3°opção imagem de fundo*/
+        }
+        header{
+            color: antiquewhite;
+            font-size: 2em;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>Muitas cores e quadros diferentes.</header>
+<main>
+
+        <div class="quadrado"id="q1" >
+            <p>Teste de palavras dentro de um box que tem fundo</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt sapiente inventore laboriosam voluptatibus molestiae molestias consectetur, in possimus provident dolor et veniam ex pariatur nostrum quidem vitae incidunt. Esse, facere!🍀</p>
+    
+        </div>
+        <div class="quadrado" id="q2">
+            <p>😎Teste de palavras dentro de um box que tem fundo</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt sapiente inventore laboriosam voluptatibus molestiae molestias consectetur, in possimus provident dolor et veniam ex pariatur nostrum quidem vitae incidunt. Esse, facere!</p>
+        </div>
+        <div class="quadrado" id="q3">
+            <p>Teste de palavras dentro de um box que tem fundo📚</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt sapiente inventore laboriosam voluptatibus molestiae molestias consectetur, in possimus provident dolor et veniam ex pariatur nostrum quidem vitae incidunt. Esse, facere!</p>
+</main>
+     
+    </div>
+</body>
+</html>

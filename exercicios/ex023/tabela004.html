@@ -21,6 +21,9 @@
             font-weight: bolder;
             padding: 10px;
         }
+        tr{
+            border: 1px solid black;
+        }
     </style>
 </head>
 <body>
@@ -31,12 +34,18 @@
         </caption>
         <thead>
             <tr>
-                <th>Grupos</th>
-                <th>Nomes</th>
-                <th colspan="3">Filmes</th>
+                <th scope="col"></th>>Grupos</th> <!--"COL" Escopo de uma única COLUNA-->
+                <th scope="col">Nomes</th><!--"COL" Escopo de uma única COLUNA-->
+                <th colspan="3" scope="colgroup">Filmes</th><!--"COLgroup" Escopo de uma conjunto de COLUNAs-->
             </tr>
+            <tfoot>
+                <tr>
+                    <th colspan="4" scope="row">Total</th>
+                    <td>1000</td>
+                </tr>
+            </tfoot>
             <tr>
-                <th rowspan="3">Mulheres</th>
+                <th rowspan="3" scope="rowgroup">Mulheres</th>
                 <td>Ana Maria Santos</td>
                 <td>Alien</td>
                 <td>Rambo</td>
@@ -55,7 +64,7 @@
             <td>Big Hero</td>
            </tr>
            <tr>
-            <th rowspan="3">Homens</th>
+            <th rowspan="3" scope="rowgroup">Homens</th>
             <td>Bruno Mendonça</td>
             <td>Intocáveis</td>
             <td>Amnésia</td>
@@ -69,7 +78,7 @@
            </tr>
            <tr>
             <td>Fabiano Mota</td>
-            <td>Star Wars 5</td>
+            <td>Star Wars V</td>
             <td>Taxi Driver</td>
             <td>Toy Story</td>
            </tr>

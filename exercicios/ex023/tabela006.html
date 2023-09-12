@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas Responsivas</title>
+    <style>
+        body{
+            font-family: 'Courier New', Courier, monospace;
+        }
+        table{
+            border-collapse: collapse;
+        }
+        caption{
+            font-size: 1.2em;
+            font-weight: bolder;
+            padding: 20px;
+        }
+        td, th{
+            border: 1px solid black;
+            padding: 10px;
+        }
+        tr:nth-child(even){
+            background-color: rgb(228,228,228);/*Efeito zebrado*/
+        }
+        div#container{
+            overflow-x:auto ;/* OVERFLOW= os dois eixos
+            overflow-y = rolagem VERTICAL
+            overflow-x = rolagem horizontal
+            e tem 3 opções auto,hidden e scroll
+            desse modo somente a tabela se move em telas pequenas*/
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabelas Pequenas</h1>
+    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea mollitia explicabo animi odio in omnis dolorem alias eveniet soluta odit? Sapiente eos ipsam cum maxime molestias cupiditate totam, expedita ea!</p>
+    <div id="container">
+        <table>
+            <caption>Tabelas Responsivas</caption>
+            <thead>
+                <tr>
+                    <th>Produto</th>
+                    <th>Jan</th>
+                    <th>Fev</th>
+                    <th>mar</th>
+                    <th>Abr</th>
+                    <th>Mai</th>
+                    <th>Jun</th>
+                    <th>Jlh</th>
+                    <th>Ago</th>
+                    <th>Set</th>
+                    <th>Nov</th>
+                    <th>Dez</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Lava Louça</td>
+                    <td>09</td>
+                    <td>07</td>
+                    <td>08</td>
+                    <td>01</td>
+                    <td>05</td>
+                    <td>03</td>
+                    <td>01</td>
+                    <td>00</td>
+                    <td>07</td>
+                    <td>12</td>
+                    <td>09</td>
+                    
+                </tr>
+                <tr>
+                    <td>Amazon Echo</td>
+                    <td>02</td>
+                    <td>03</td>
+                    <td>03</td>
+                    <td>01</td>
+                    <td>09</td>
+                    <td>03</td>
+                    <td>04</td>
+                    <td>00</td>
+                    <td>05</td>
+                    <td>08</td>
+                    <td>09</td>
+                    
+                </tr>
+                <tr>
+                    <td>Ventilador</td>
+                    <td>06</td>
+                    <td>03</td>
+                    <td>08</td>
+                    <td>05</td>
+                    <td>01</td>
+                    <td>07</td>
+                    <td>03</td>
+                    <td>04</td>
+                    <td>07</td>
+                    <td>10</td>
+                    <td>09</td>
+                    
+                </tr>
+                <tr>
+                    <td>Maquina de Lavar </td>
+                    <td>08</td>
+                    <td>07</td>
+                    <td>02</td>
+                    <td>05</td>
+                    <td>03</td>
+                    <td>03</td>
+                    <td>01</td>
+                    <td>06</td>
+                    <td>07</td>
+                    <td>05</td>
+                    <td>01</td>
+                    
+                </tr>
+                <tr>
+                    <td>Aspirador de pó</td>
+                    <td>04</td>
+                    <td>01</td>
+                    <td>07</td>
+                    <td>03</td>
+                    <td>01</td>
+                    <td>07</td>
+                    <td>03</td>
+                    <td>07</td>
+                    <td>02</td>
+                    <td>06</td>
+                    <td>10</td>
+                    
+                </tr>
+                <tr>
+                    <td>Panela Eletrica</td>
+                    <td>01</td>
+                    <td>04</td>
+                    <td>03</td>
+                    <td>02</td>
+                    <td>01</td>
+                    <td>06</td>
+                    <td>07</td>
+                    <td>10</td>
+                    <td>15</td>
+                    <td>23</td>
+                    <td>08</td>
+                    
+                </tr>
+        
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

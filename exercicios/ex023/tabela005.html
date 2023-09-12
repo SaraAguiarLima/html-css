@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios de Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            width: 500px;
+            border-collapse: collapse;
+        }
+        caption{
+            font-size: 1.3em;
+            font-weight: bolder;
+            padding: 8px;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+        tr.destaque{
+            background-color: rgb(240, 240, 14);
+        }
+        col.cnome{
+            background-color: aqua;
+        }
+        .amarelo{
+            background-color: yellow;
+        }
+        .vermelho{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <colgroup>
+                <col class="vermelho">
+                <col class="amarelo" span="2">
+                <col class="vermelho">
+        </colgroup>
+        <caption>Cadastro</caption>
+        <tr>
+            <td scope="col">Nome</td>
+            <td scope="col">Sexo</td>
+            <td scope="col">Idade</td>
+            <td scope="col">Profissão</td>
+        </tr>
+        <tr>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalista</td>
+            
+        </tr>
+        <tr>
+            <td>Maristela Oliveira</td>
+            <td>F</td>
+            <td>30</td>
+            <td>Bancária</td>
+        </tr>
+        <tr  class="destaque">
+            <td>Joel Silva</td>
+            <td>M</td>
+            <td>27</td>
+            <td>Funcionário Pblico</td>
+        </tr>
+        <tr>
+            <td>Bernado SIlva</td>
+            <td>M</td>
+            <td>45</td>
+            <td>Comerciante</td>
+        </tr>
+        <tr>
+            <td>Terezinha Souza</td>
+            <td>F</td>
+            <td>39</td>
+            <td>Do lar</td>
+        </tr>
+        <tr>
+            <td>Geni Silva</td>
+            <td>F</td>
+            <td>86</td>
+            <td>Aposentada</td>
+        </tr>
+        
+    </table>
+</body>
+</html>

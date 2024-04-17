@@ -8,9 +8,16 @@
 <body>
     <h1>Teste de Formulário</h1>
     <form action="cadastro.php" method="post" autocomplete="off">
+        <!-- 
+            *SIZE* = FORMATO DA CX DE ENTRADA, VAI MOSTRAR DETERMINADO NUMERO DE CARACTERES MAS PODE CABER MUITO MAIS DEPENDENDO DA CONFIGURAÇÕES DE MINLENGTH E MAXLENGTH .
+            *MINLENGTH* = MINIMO DE CARACTERES PERMITIDO.
+            *MAXLENGTH* = MAXIMO DE CARACTERES PERMITIDO.
+            *AUTOCOMPLETE NO <FORM> * = PODE SER OFF OU ON, PORÉM FORA DO <FORM> EM CADA CX TEM VARIAS OUTRAS OPÇÕES, QUE INCLUSIVE SERVE PRA DIZER QUE TIPO DE CX É, SE É NOME, SENHA, E-MAIL,ETC COMO "new-password" QUE IRÁ SUGERIR UMA NOVA SENHA, QUE FICARÁ POSTERIORMENTE SALVA .
+            *PLACEHOLDER* = APARECE UMA DICA DE PREENCHIMENTO P/ O USUÁRIO
+        -->
         <p>
             <label for="iusu">Usuário</label>
-            <input type="text" name="usu" id="iusu" required minlength="5" maxlength="15" size="18" placeholder="Nome do Usuário" autocomplete="username">
+            <input type="text" name="usu" id="iusu" required minlength="5" maxlength="15" size="18"  placeholder="Nome do Usuário" autocomplete="username"> 
         </p>
         <p>
             <label for="isen">Senha</label>

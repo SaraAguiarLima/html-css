@@ -9,13 +9,25 @@
     <h1>Exemplos de Formulários</h1>
     <form action="cadastro.php" method="get" autocomplete="on">
         <p>
-            <label for=""></label>
+            <label for="iano">Em que ano você nasceu?</label>
+            <input type="number" name="ano" id="iano" min="1900" max="2024" oninput="calcIdade()">
+        </p>
+        <p>
+            <label for="iidade">Sua idade é: </label>
+            <output id="iidade">0</output>
         </p>
 
        
             <input type="submit" value="Enviar">
             <input type="reset" value="Limpar">
         </p>
+
+        <script>
+            function calcIdade() {
+                let atual = new Date().getFullYear()
+                iidade.innerHTML = Number(atual) - Number(iano.value)
+            }
+        </script>
     </form>
 </body>
 </html>

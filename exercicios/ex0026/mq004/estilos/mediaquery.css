@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+/*TODAS AS DEMAIS MÍDIAS*/
+
+/*Typical Device Breakpoints( Guanabara)
+---------------------------
+Pequenas telas: até 
+celular: de 600px até 768px
+tablet:768px até 992px
+desktop:992px até 1200px
+grande telas: acima de 1200px
+
+*/
+
+@media print{
+
+}
+
+/*Como já fiz as configurações de celulares e pequenas telas no meu STYLE MOBILE FIRT, agora não preciso fazer novamnete...
+
+@media screen and (max-width: 600px){
+
+}
+@media screen and (min-width:600px) and (max-width:768px){
+
+}*/
+
+@media screen and(min-width: 768px) and (max-width:992px){
+
+}
+
+@media screen and(min-width: 992px) and (max-width:1200px){
+    
+}
+@media screen and(min-width: 768px) and (max-width:1200px){
+    
+}
